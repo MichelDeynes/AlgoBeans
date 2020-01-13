@@ -23,7 +23,8 @@ public class RemplirMatriceCarrée {
     // int[] [] tab = new int[l];
     //Pile de valeurs.
     int pile;
-    int[] [] tab;
+    // une constante pour optimiser dans ce code.
+    final int[] [] tab;
     
     System.out.print("Saisir la dimension de la matrice : ");
         n = reader.nextInt();
@@ -51,11 +52,10 @@ public class RemplirMatriceCarrée {
     for (int i=0; i<n; i++) {
         for (int j=0; j<n; j++){
             System.out.print(  "\t" +tab[i][j]);
-            //System.out.println();
+            //System.out.printf();
 
-        }
+            }
                     System.out.println();
-
+        }
     }
-    }
-    }
+}
